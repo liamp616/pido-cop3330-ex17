@@ -88,9 +88,9 @@ public class App {
     }
 
     public double findR(String gender) {
-        if(gender.equals("M")) {
+        if(gender.toUpperCase().equals("M")) {
             return 0.73;
-        } else if(gender.equals("W")) {
+        } else if(gender.toUpperCase().equals("W")) {
             return 0.66;
         }
 
