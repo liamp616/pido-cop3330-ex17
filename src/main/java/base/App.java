@@ -88,13 +88,15 @@ public class App {
     }
 
     public double findR(String gender) {
+        double ret = 0;
+
         if(gender.toUpperCase().equals("M")) {
-            return 0.73;
+            ret = 0.73;
         } else if(gender.toUpperCase().equals("W")) {
-            return 0.66;
+            ret = 0.66;
         }
 
-        return 0;
+        return ret;
     }
 
     public String readGender() {
