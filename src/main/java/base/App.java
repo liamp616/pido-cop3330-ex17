@@ -68,7 +68,13 @@ public class App {
         double BB = W * r;
         double C = .015 * H;
         double BAC = (B / BB) - C;
-        System.out.print(BAC);
+        System.out.println("Your BAC is " + String.format("%.2f", (BAC * 100.0) / 100.0));
+
+        if(BAC >= 0.08) {
+            System.out.println("It is not legal for you to drive.");
+        } else {
+            System.out.println("It is legal for you to drive.");
+        }
     }
 
     public int readHours() {
